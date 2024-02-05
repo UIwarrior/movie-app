@@ -1,10 +1,11 @@
-import Axios from "axios"
+import Axios from "axios";
 
-const Movie_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=509a269d";
+// add your title and api key
+const Movie_URL = "http://www.omdbapi.com/";
 
 const instance = Axios.create({
-   baseURL: Movie_URL,
-   responseType: 'json'  
-})
+  baseURL: Movie_URL,
+  responseType: "json",
+});
 
 export default instance;
